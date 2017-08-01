@@ -8,9 +8,11 @@ import path from 'path'
 
 const rootPath = path.resolve(__dirname,'..');
 const client =  path.join(rootPath,'client');
+const publicPath = '/';
 
 export {
     client,
+    publicPath,
 }
 
 

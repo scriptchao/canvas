@@ -5,13 +5,10 @@
  */
 
 import path from 'path'
-import NyanProgressPlugin from 'nyan-progress-webpack-plugin'
+import ProgressPlugin from 'nyan-progress-webpack-plugin'
 import {client} from './common-path'
 
 export default {
-    entry: {
-        app: path.join(client, 'app.js')
-    },
     resolve: {
         extensions: ['.js', '.jsx']
     },
@@ -27,12 +24,12 @@ export default {
                 use: ['html-loader']
             },
             {
-                test: /\.(jpe?g|png|gif||svg)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(jpe?g|png|gif|svg)(\?v=\d+\.\d+\.\d+)?$/,
                 use: ['url-loader?limit=10240&name=[name].[hash].[ext]']
             }
         ]
     },
     plugins: [
-        new NyanProgressPlugin(),
+        new ProgressPlugin(),
     ]
 }

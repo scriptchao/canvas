@@ -29,7 +29,6 @@ const render = Component => {
 
 render(App);
 
-
 if (module.hot) {
     console.log('react-hot-loader');
     module.hot.accept('./components/App', () => {

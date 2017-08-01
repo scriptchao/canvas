@@ -17,7 +17,7 @@ export default class Index extends Component {
     render() {
         return (
             <div className="rct">
-                WELCOME TO MY REACT TEST11111
+                WELCOME TO MY REACT TEST1133333
                 <input type="text"/>
             </div>
         )
