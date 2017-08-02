@@ -10,6 +10,7 @@ import {Provider} from 'mobx-react'
 import createHistory from 'history/createBrowserHistory'
 import {AppContainer} from 'react-hot-loader'
 import App from './components/App'
+import './styles/index.sass'
 
 const history = createHistory();
 const MOUNT_NODE = document.getElementById('app');
@@ -31,8 +32,9 @@ render(App);
 
 if (module.hot) {
     console.log('react-hot-loader');
-    module.hot.accept('./components/App', () => {
-        const NextApp = require('./components/App').default;
-        render(NextApp)
-    })
+    module.hot.accept()
+    // module.hot.accept('./components/App', () => {
+    //     const NextApp = require('./components/App').default;
+    //     render(NextApp)
+    // })
 }
