@@ -5,6 +5,7 @@
  */
 
 import path from 'path'
+import webpack from 'webpack'
 import ProgressPlugin from 'nyan-progress-webpack-plugin'
 import {client} from './common-path'
 
@@ -18,10 +19,6 @@ export default {
                 test: /\.(js|jsx)$/,
                 use: ['babel-loader'],
                 exclude: /node_modules/
-            },
-            {
-                test: /\.html$/,
-                use: ['html-loader']
             },
             {
                 test: /\.(jpe?g|png|gif|svg)(\?v=\d+\.\d+\.\d+)?$/,

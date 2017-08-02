@@ -10,7 +10,7 @@ import merge from 'webpack-merge'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import BrowserSyncPlugin from 'browser-sync-webpack-plugin'
 import config from './webpack.base'
-import {client,publicPath} from './common-path'
+import {client, publicPath} from './common-path'
 
 export default merge(config, {
     entry: {
@@ -21,7 +21,7 @@ export default merge(config, {
         ]
     },
     output: {
-        filename: '[name].[hash:6].js',
+        filename: '[name].js',
         publicPath: publicPath
     },
     module: {

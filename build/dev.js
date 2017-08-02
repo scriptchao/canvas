@@ -17,11 +17,11 @@ const app = express();
 const compiler = webpack(config);
 
 app.use(connectHistoryApiFallback());
-app.use(webpackDevMiddleware(compiler,{
+app.use(webpackDevMiddleware(compiler, {
     noInfo: true,
     publicPath: publicPath
 }));
 app.use(webpackHotMiddleware(compiler));
 
-app.listen(6000,() => console.log('app listening on port 6000,proxy in 6060'));
+app.listen(6000, () => console.log('app listening on port 6000,proxy in 6060'));
 

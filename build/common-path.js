@@ -6,13 +6,16 @@
 
 import path from 'path'
 
-const rootPath = path.resolve(__dirname,'..');
-const client =  path.join(rootPath,'client');
+const rootPath = path.resolve(__dirname, '..');
+const client = path.join(rootPath, 'client');
 const publicPath = '/';
+const dist = path.join(rootPath, 'dist');
 
 export {
     client,
     publicPath,
+    rootPath,
+    dist
 }
 
 
