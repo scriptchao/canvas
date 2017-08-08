@@ -30,11 +30,11 @@ const render = Component => {
 
 render(App);
 
-if (module.hot) {
-    console.log('react-hot-loader');
-    module.hot.accept()
-    // module.hot.accept('./components/App', () => {
-    //     const NextApp = require('./components/App').default;
-    //     render(NextApp)
-    // })
-}
+// if (module.hot) {
+//     console.log('react-hot-loader');
+//     module.hot.accept()
+//     // module.hot.accept('./components/App', () => {
+//     //     const NextApp = require('./components/App').default;
+//     //     render(NextApp)
+//     // })
+// }
